@@ -1,0 +1,11 @@
+{
+  "name": "webrescue-business-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static WebRescue online-business website",
+  "scripts": {
+    "dev": "python -m http.server 4173",
+    "start": "python -m http.server 4173",
+    "check": "node scripts/check.mjs"
+  }
+}
