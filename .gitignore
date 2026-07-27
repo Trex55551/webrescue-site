@@ -1,0 +1,8 @@
+cloudflared.exe
+node_modules/
+.vercel/
+.vercelignore
+*.log
+.DS_Store
+Thumbs.db
+vercel_deployment.json
