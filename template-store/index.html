@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WebRescue Templates — Premium One-Page Website Templates</title>
+<meta name="description" content="Five conversion-focused, one-page website templates in the style of Stripe, Linear, Vercel, Notion and Airbnb. Instant download, no build step, unlimited customization.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0d12; --bg2:#10141c; --card:#141926; --border:#232b3b;
+  --text:#e6eaf2; --muted:#8b95a9; --accent:#7c6cff; --accent2:#22d3ee;
+  --grad:linear-gradient(135deg,#7c6cff 0%,#22d3ee 100%);
+  --radius:16px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--accent2)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(11,13,18,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:800;font-size:18px;letter-spacing:-.02em;color:#fff;text-decoration:none}
+.logo span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.nav-links{display:flex;gap:28px;list-style:none;align-items:center}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:#fff}
+.cta-btn{background:var(--grad);color:#fff!important;padding:9px 20px;border-radius:999px;font-weight:600!important;box-shadow:0 4px 20px rgba(124,108,255,.35)}
+@media(max-width:720px){.nav-links a:not(.cta-btn){display:none}}
+/* hero */
+.hero{padding:96px 0 72px;text-align:center;position:relative}
+.hero .badge{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);background:var(--card);padding:6px 14px;border-radius:999px;font-size:13px;color:var(--muted);margin-bottom:24px}
+.hero .badge .dot{width:8px;height:8px;border-radius:50%;background:var(--accent2);box-shadow:0 0 12px var(--accent2)}
+.hero h1{font-size:clamp(34px,5.5vw,58px);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:20px}
+.hero h1 .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.sub{font-size:clamp(16px,2vw,20px);color:var(--muted);max-width:640px;margin:0 auto 36px}
+.hero .actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 32px;border-radius:12px;font-weight:700;font-size:16px;text-decoration:none;transition:transform .15s,box-shadow .2s;border:none;cursor:pointer}
+.btn-primary{background:var(--grad);color:#fff;box-shadow:0 8px 30px rgba(124,108,255,.35)}
+.btn-ghost{background:var(--card);color:#fff;border:1px solid var(--border)}
+.btn:hover{transform:translateY(-2px)}
+.hero .meta{margin-top:28px;font-size:13px;color:var(--muted)}
+/* showcase */
+.showcase{padding:48px 0 80px}
+.sec-label{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--accent2);text-transform:uppercase;letter-spacing:.12em;margin-bottom:12px}
+h2.sec-title{font-size:clamp(26px,3.5vw,38px);font-weight:800;letter-spacing:-.02em;margin-bottom:12px}
+.sec-desc{color:var(--muted);max-width:560px;margin-bottom:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:border-color .2s,transform .2s}
+.card:hover{border-color:#37415a;transform:translateY(-4px)}
+.card img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover;object-position:top;background:var(--bg2)}
+.card-body{padding:20px 22px 22px}
+.card-body h3{font-size:17px;font-weight:700;margin-bottom:4px}
+.card-body .style{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--muted);margin-bottom:10px}
+.card-body p{font-size:14px;color:var(--muted);margin-bottom:16px}
+.card-links{display:flex;gap:16px;align-items:center}
+.card-links a{font-size:14px;font-weight:600;text-decoration:none}
+/* features */
+.features{padding:24px 0 80px}
+.f-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.f-item{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px}
+.f-item .icon{font-size:22px;margin-bottom:10px}
+.f-item h4{font-size:15px;font-weight:700;margin-bottom:6px}
+.f-item p{font-size:13.5px;color:var(--muted)}
+/* pricing */
+.pricing{padding:24px 0 80px}
+.price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;max-width:860px}
+.price-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:32px;position:relative}
+.price-card.featured{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent),0 12px 40px rgba(124,108,255,.15)}
+.price-card .tag{position:absolute;top:-12px;left:24px;background:var(--grad);color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:999px}
+.price-card h3{font-size:18px;font-weight:700;margin-bottom:4px}
+.price-card .amt{font-size:40px;font-weight:800;letter-spacing:-.03em;margin:12px 0 4px}
+.price-card .amt span{font-size:15px;color:var(--muted);font-weight:500}
+.price-card ul{list-style:none;margin:20px 0 24px}
+.price-card ul li{font-size:14px;color:var(--muted);padding:6px 0;padding-left:26px;position:relative}
+.price-card ul li::before{content:"✓";position:absolute;left:0;color:var(--accent2);font-weight:700}
+.price-card .btn{width:100%;text-align:center}
+.price-note{font-size:13px;color:var(--muted);margin-top:16px}
+/* steps */
+.steps{padding:24px 0 80px}
+.step-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.step{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px}
+.step .n{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--accent2);margin-bottom:8px}
+.step h4{font-size:15px;font-weight:700;margin-bottom:6px}
+.step p{font-size:13.5px;color:var(--muted)}
+/* faq */
+.faq{padding:24px 0 80px;max-width:760px}
+details{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px 22px;margin-bottom:12px}
+summary{font-weight:600;cursor:pointer;font-size:15px}
+details p{color:var(--muted);font-size:14px;margin-top:10px}
+/* footer */
+footer{border-top:1px solid var(--border);padding:36px 0 48px;color:var(--muted);font-size:13.5px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+:focus-visible{outline:2px solid var(--accent2);outline-offset:3px;border-radius:6px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#">WebRescue <span>Templates</span></a>
+    <ul class="nav-links">
+      <li><a href="#templates">Templates</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a class="cta-btn" href="#pricing">Get the Kit</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="badge"><span class="dot"></span> Instant download · no build step · lifetime updates</div>
+    <h1>Premium one-page websites.<br><span class="g">Launch in an afternoon.</span></h1>
+    <p class="sub">Five conversion-focused templates in the design language of Stripe, Linear, Vercel, Notion and Airbnb. Buy once, customize with a search-and-replace, deploy free.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#pricing">Browse templates — from $29</a>
+      <a class="btn btn-ghost" href="#templates">See the designs</a>
+    </div>
+    <p class="meta">Delivered by <strong>Construx AI Services</strong> · support: hello@construxaiservices.com</p>
+  </div>
+</header>
+
+<section class="showcase" id="templates">
+  <div class="wrap">
+    <div class="sec-label">The collection</div>
+    <h2 class="sec-title">Five design languages. One consistent quality bar.</h2>
+    <p class="sec-desc">Each template is a complete single-page site (HTML + CSS + JS in one file). The screenshots below show real renders of each template, filled with sample business content.</p>
+    <div class="grid">
+
+      <div class="card">
+        <img src="assets/stripe-style.png" alt="Stripe-style template preview showing a clean light finance layout" loading="lazy">
+        <div class="card-body">
+          <h3>Stripe Style</h3>
+          <div class="style">Professional · light · conversion-focused</div>
+          <p>Polished gradient accents and a crisp light theme. Ideal for agencies, clinics and professional services.</p>
+          <div class="card-links"><a href="#pricing">Buy $29</a></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/linear-style.png" alt="Linear-style template preview showing a dark modern SaaS layout" loading="lazy">
+        <div class="card-body">
+          <h3>Linear Style</h3>
+          <div class="style">Dark · modern · product-focused</div>
+          <p>Sleek dark-mode aesthetics with glowing accents. Built for SaaS, startups and tech products.</p>
+          <div class="card-links"><a href="#pricing">Buy $29</a></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/vercel-style.png" alt="Vercel-style template preview showing a minimal black and white layout" loading="lazy">
+        <div class="card-body">
+          <h3>Vercel Style</h3>
+          <div class="style">Minimal · monochrome · precision</div>
+          <p>Black &amp; white restraint with sharp typography. Great for consultancies, analytics and B2B.</p>
+          <div class="card-links"><a href="#pricing">Buy $29</a></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/notion-style.png" alt="Notion-style template preview showing a warm friendly organic layout" loading="lazy">
+        <div class="card-body">
+          <h3>Notion Style</h3>
+          <div class="style">Warm · friendly · organic</div>
+          <p>Soft rounded shapes and a warm palette. Perfect for cafés, local shops and community brands.</p>
+          <div class="card-links"><a href="#pricing">Buy $29</a></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="assets/airbnb-style.png" alt="Airbnb-style template preview showing a coral playful travel layout" loading="lazy">
+        <div class="card-body">
+          <h3>Airbnb Style</h3>
+          <div class="style">Coral · playful · inviting</div>
+          <p>Bold coral and rounded cards that feel friendly and trustworthy. Great for rentals, travel and hospitality.</p>
+          <div class="card-links"><a href="#pricing">Buy $29</a></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="wrap">
+    <div class="sec-label">Why these templates</div>
+    <h2 class="sec-title">Everything a small business site needs.</h2>
+    <div class="f-grid">
+      <div class="f-item"><div class="icon">⚡</div><h4>No build step</h4><p>One HTML file. Open it, edit it, upload it. No Node, no bundlers, no lock-in.</p></div>
+      <div class="f-item"><div class="icon">📱</div><h4>Responsive by default</h4><p>Every template adapts cleanly from 360px phones to 1440px desktops.</p></div>
+      <div class="f-item"><div class="icon">🎨</div><h4>2-minute customization</h4><p>Search-and-replace 7 placeholders (name, tagline, phone, email, address…) — done.</p></div>
+      <div class="f-item"><div class="icon">🚀</div><h4>Free hosting ready</h4><p>Deploy to GitHub Pages, Netlify or Vercel at $0 and get a live site same day.</p></div>
+      <div class="f-item"><div class="icon">📄</div><h4>Clear license</h4><p>Use on your own site or one end client per purchase. Commercial use allowed.</p></div>
+      <div class="f-item"><div class="icon">💬</div><h4>Human support</h4><p>Real email support from a real person. We answer within a day.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <div class="wrap">
+    <div class="sec-label">Pricing</div>
+    <h2 class="sec-title">Buy once. Use forever.</h2>
+    <div class="price-grid">
+      <div class="price-card">
+        <h3>Single Template</h3>
+        <div class="amt">$29 <span>one-time</span></div>
+        <ul>
+          <li>1 template of your choice</li>
+          <li>Full source (HTML/CSS/JS)</li>
+          <li>Setup guide + license</li>
+          <li>Lifetime updates</li>
+          <li>Email support</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://construxai.gumroad.com/l/webrescue-template-stripe-style" rel="noopener">Buy on Gumroad</a>
+      </div>
+      <div class="price-card featured">
+        <div class="tag">Best value</div>
+        <h3>Full Kit — All 5</h3>
+        <div class="amt">$99 <span>one-time</span></div>
+        <ul>
+          <li>All 5 templates (Stripe · Linear · Vercel · Notion · Airbnb)</li>
+          <li>Full source for every template</li>
+          <li>Setup guide + license for each</li>
+          <li>Lifetime updates</li>
+          <li>Priority email support</li>
+        </ul>
+        <a class="btn btn-primary" href="https://construxai.gumroad.com/l/webrescue-template-kit" rel="noopener">Buy the Kit — $99</a>
+      </div>
+    </div>
+    <p class="price-note">Payment &amp; instant file delivery are handled automatically by Gumroad — no manual checkout, no waiting. Prefer to pay another way? <a href="mailto:hello@construxaiservices.com?subject=Template%20Kit%20order">Email us</a>.</p>
+  </div>
+</section>
+
+<section class="steps">
+  <div class="wrap">
+    <div class="sec-label">How it works</div>
+    <h2 class="sec-title">Live in three steps.</h2>
+    <div class="step-grid">
+      <div class="step"><div class="n">01</div><h4>Buy &amp; download</h4><p>Checkout is instant. Gumroad emails you the ZIP with your template inside.</p></div>
+      <div class="step"><div class="n">02</div><h4>Swap in your details</h4><p>Open the file, replace 7 placeholders with your business info, save.</p></div>
+      <div class="step"><div class="n">03</div><h4>Deploy free</h4><p>Drag the folder onto Netlify or push to GitHub Pages. Your site is live.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="sec-label">FAQ</div>
+    <h2 class="sec-title">Questions, answered.</h2>
+    <details open>
+      <summary>Do I need coding skills?</summary>
+      <p>No. If you can search-and-replace text in a document, you can customize these templates. The setup guide walks through it line by line.</p>
+    </details>
+    <details>
+      <summary>Can I use a template for a client?</summary>
+      <p>Yes — each purchase covers your own site or one end client. For multiple client projects, buy one license per client or grab the kit.</p>
+    </details>
+    <details>
+      <summary>What exactly do I receive?</summary>
+      <p>A ZIP containing the template HTML file, a README with customization instructions, and a license file. Everything needed to launch.</p>
+    </details>
+    <details>
+      <summary>What's the difference from a custom redesign?</summary>
+      <p>Templates give you a proven, polished design instantly at a fraction of the price. Custom work (unique branding, extra pages, animations, CMS) is quoted separately — ask us.</p>
+    </details>
+    <details>
+      <summary>Refunds?</summary>
+      <p>Digital goods are non-refundable once downloaded, but if anything is broken or unclear, email us and we'll make it right.</p>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Construx AI Services · WebRescue Templates</div>
+    <div>Support: <a href="mailto:hello@construxaiservices.com">hello@construxaiservices.com</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
